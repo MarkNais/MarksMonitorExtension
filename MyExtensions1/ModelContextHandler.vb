@@ -8,9 +8,11 @@ Public Class ModelContextHandler
         mContext = context
     End Sub
 
-    Private Sub HandleCopied(ByVal sender As Object, ByVal e As System.EventArgs) Handles mContext.CopiedMasterModel
-
-        MessageBox.Show("event HandleCopied called")
+    Private Sub handleCopied(ByVal sender As Object, ByVal e As System.EventArgs) Handles mContext.CopiedMasterModel
+        MessageBox.Show("event handleCopied called")
     End Sub
 
+    Private Sub handelGenerated(sender As Object, e As EventArgs) Handles mContext.Generated
+        MessageBox.Show("event handelGenerated called")
+    End Sub
 End Class

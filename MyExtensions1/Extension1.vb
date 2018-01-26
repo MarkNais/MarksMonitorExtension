@@ -20,6 +20,7 @@ Imports System.Windows.Forms
 
 ' Other useful extensibility imports (you will need to add a reference to use these)
 ' Imports DriveWorks.SolidWorks                                 ' In DriveWorks.SolidWorks.dll
+
 <ApplicationPlugin(
     "MarksExtension",
     "Marks Special Plugin",
@@ -31,7 +32,6 @@ Public NotInheritable Class DriveWorksEventsPlugin
     'Private WithEvents mModelGenerationContext As IModelGenerationContext
     Private mGenerationHandler As GenerationServiceHandler
     Private mSolidWorksService As ISolidWorksService
-
 
 
 
@@ -55,8 +55,4 @@ Public NotInheritable Class DriveWorksEventsPlugin
         'Throw New NotImplementedException()
     End Sub
 
-    'Private Sub mGenerationService_ModelGenerationContextCreated(sender As Object, e As ModelGenerationContextEventArgs) Handles mGenerationService.ModelGenerationContextCreated
-    '    Dim handler As ModelEventHandler
-    '    handler = New ModelEventHandler(e.Context, mSolidWorksService)
-    'End Sub
 End Class

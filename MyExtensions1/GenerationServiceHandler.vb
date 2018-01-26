@@ -17,8 +17,6 @@ Public Class GenerationServiceHandler
     ''' <remarks></remarks>
     Public Sub New(ByVal application As IApplication)
         MessageBox.Show("application is Nothing = " + CStr(application Is Nothing))
-
-        'MessageBox.Show("new GenerationServiceHandler called\nWith application: " + (application Is Nothing))
         'If application Is Nothing Then Throw New ArgumentNullException("application")
 
         mEnabled = True
