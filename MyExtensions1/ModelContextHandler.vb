@@ -66,6 +66,12 @@ Cleanup:
             'Replace the reference of generating-file's old skeleton with the new one.
             'Empty-string checking shouldn't be required, as ReplaceReferencedDocument() should fail silently.
             swApp = CType(mSolidWorksService.SolidWorks, SldWorks.SldWorks)
+            'MsgBox("model:" & vbCrLf &
+            '       mContext.Model.TargetPath &
+            '        "Old:" & vbCrLf &
+            '        oldSkeletonReference &
+            '         "New:" & vbCrLf &
+            '        newSkeletongReference)
             swApp.ReplaceReferencedDocument(mContext.Model.TargetPath, oldSkeletonReference, newSkeletongReference)
         End If
     End Sub
